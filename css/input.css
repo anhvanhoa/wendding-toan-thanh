@@ -1,0 +1,6 @@
+@import 'tailwindcss';
+@theme {
+    --font-meow: 'Grey Qo', serifll;
+    --font-lobster: 'Lobster', serif;
+    --font-splash: 'Splash', serif;
+}

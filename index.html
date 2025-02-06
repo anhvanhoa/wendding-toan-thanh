@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,23 +11,16 @@
             href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Lobster&family=Splash&display=swap"
             rel="stylesheet"
         />
-        <style type="text/tailwindcss">
-            @theme {
-                --font-meow: 'Grey Qo', serifll;
-                --font-lobster: 'Lobster', serif;
-                --font-splash: 'Splash', serif;
-            }
-        </style>
+        <link rel="stylesheet" href="./css/output.css" />
     </head>
-    <body class="h-[1200px]">
-        <div class="max-w-md mx-auto border-x">
-            <div class="relative">
-                <div class="absolute inset-0 top-8">
-                    <h1 class="font-splash text-white -rotate-6 text-center text-3xl">Phạm Thanh - Đỗ Toàn</h1>
-                </div>
-                <img src="./imgs/DSC_1980.JPG" alt="" />
+    <body>
+        <div>
+            <div
+                class="overflow-hidden relative min-h-96 bg-cover bg-black w-full aspect-[4/6] bg-[url(/imgs/bg-1.jpg)]"
+            >
+                <h1 class="font-splash text-white text-center text-3xl -rotate-6 pt-10">Phạm Thanh - Đỗ Toàn</h1>
                 <div
-                    class="absolute bottom-4 px-6 py-4 left-0 right-0 mx-2 rounded-2xl backdrop-blur-xl bg-white/10 text-center *:py-1"
+                    class="absolute bottom-4 px-4 py-4 left-0 right-0 mx-2 rounded-2xl backdrop-blur-xl bg-white/10 text-center *:py-1"
                 >
                     <p class="uppercase font-semibold">Thư mời tiệc cưới</p>
                     <p class="text-2xl font-meow">Chủ Nhật, ngày 08 tháng 03 năm 2025</p>
@@ -43,12 +36,12 @@
                     <img src="./imgs/hoa-tiet.png" alt="" class="absolute -top-4 -right-4 rotate-180 w-32" />
                 </div>
             </div>
-            <div class="border-t border-gray-300 mt-16">
-                <h3 class="uppercase text-xl font-light text-center py-8 text-gray-500">Giới thiệu</h3>
-                <div class="space-y-8">
+            <div>
+                <h3 class="uppercase text-xl font-light text-center py-12 text-gray-500">Giới thiệu</h3>
+                <div class="space-y-16">
                     <div class="px-4 grid grid-cols-1 gap-4 items-center justify-center">
                         <img
-                            src="./imgs/DSC_2053.JPG"
+                            src="./imgs/DO_TOAN.jpg"
                             alt="Đỗ Văn Toàn"
                             class="w-40 rounded-full aspect-square object-cover object-top mx-auto"
                         />
@@ -81,16 +74,15 @@
                     </div>
                 </div>
             </div>
-            <div class="border-t border-gray-300 mt-16">
-                <h3 class="uppercase text-xl font-light text-center py-8 text-gray-500">Thiệp mời</h3>
+            <div class="border-y border-gray-300 mt-14">
                 <div class="space-y-8">
                     <div
-                        class="w-full aspect-[4/6] bg-cover bg-[url(./imgs/bg.jpg)] flex items-center justify-center flex-col gap-y-4 px-24"
+                        class="w-full aspect-[4/6] bg-cover bg-[url(/imgs/bg.jpg)] flex items-center justify-center flex-col gap-y-4 px-16"
                     >
                         <img
                             src="./imgs/DSC_2141.JPG"
                             alt=""
-                            class="w-44 inset-shadow-sm aspect-square rounded-t-full rounded-b-4xl object-top object-cover"
+                            class="w-36 inset-shadow-sm aspect-square rounded-t-full rounded-b-4xl object-top object-cover"
                         />
                         <p class="font-light text-lg uppercase font-great">Tiệc MỪng Nhà Trai</p>
                         <div class="text-sm text-center">
@@ -103,15 +95,12 @@
                             <p>
                                 <span class="font-light px-4">Xóm Bắc, Xã Tân An, Huyện Thanh Hà, Hải Dương</span>
                             </p>
-                            <p class="font-light text-center font-meow text-lg mt-4">
-                                Kính mời quý vị đến chung vui cùng gia đình chúng tôi!
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="border-t border-gray-300 mt-16">
-                <h3 class="uppercase text-xl font-light text-center py-8 text-gray-500">Album</h3>
+            <div class="border-gray-300">
+                <h3 class="uppercase text-xl font-light text-center py-12 text-gray-500">Album</h3>
                 <div class="space-y-4">
                     <div class="px-4">
                         <div class="flex items-center justify-between py-3">
@@ -192,6 +181,35 @@
                             <li>🎁 Trao quà lưu niệm cho khách mời.</li>
                             <li>👋 Chia tay & gửi lời chúc tốt đẹp.</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-300 mt-16 bg-cover bg-center bg-[url(/imgs/form.jpg)] py-6">
+                <h3 class="uppercase text-xl text-center py-8 text-white">Sổ Lưu Bút</h3>
+                <div>
+                    <div class="px-6 text-sm mx-4">
+                        <form action="" class="space-y-3">
+                            <input
+                                type="text"
+                                placeholder="Họ và tên"
+                                class="w-full outline-none bg-gray-100/50 backdrop-blur-sm py-2.5 px-2.5 rounded-lg"
+                            />
+                            <input
+                                type="text"
+                                placeholder="Số điện thoại"
+                                class="w-full outline-none bg-gray-100/50 backdrop-blur-sm py-2.5 px-2.5 rounded-lg"
+                            />
+                            <textarea
+                                rows="4"
+                                placeholder="Lời nhắn"
+                                class="w-full outline-none bg-gray-100/50 backdrop-blur-sm py-2.5 px-2.5 rounded-lg"
+                            ></textarea>
+                            <button
+                                class="w-full !py-2.5 px-5 rounded-full bg-rose-600 hover:bg-rose-600/80 transition-all cursor-pointer font-medium text-white text-sm"
+                            >
+                                Xác nhận tham gia
+                            </button>
+                        </form>
                     </div>
 
                     <p class="mt-6 font-light text-center text-sm py-4 text-gray-500">
